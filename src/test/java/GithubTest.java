@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class githubTest {
+public class GithubTest {
 
 
     @BeforeAll
@@ -15,7 +15,7 @@ public class githubTest {
     }
 
     @Test
-    void SearchSelenide() {
+    void searchSelenide() {
         open("https://github.com/");
         $("[name=q]").click();
         $("[name=q]").setValue("selenide").pressEnter();
