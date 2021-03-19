@@ -17,7 +17,6 @@ public class GithubTest {
     @Test
     void searchSelenide() {
         open("https://github.com/");
-        $("[name=q]").click();
         $("[name=q]").setValue("selenide").pressEnter();
         $(".repo-list").find(byText("selenide/")).click();
         $(".js-repo-nav").find(byText("Wiki")).click();
